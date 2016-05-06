@@ -13,7 +13,7 @@ extern "C" {
  * Signature: (Ljava/lang/String;Ljava/lang/String;)I
  */
 JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_encode
-  (JNIEnv *, jobject, jstring, jstring);
+  (JNIEnv *, jclass, jstring, jstring);
 
 /*
  * Class:     ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss
@@ -21,7 +21,7 @@ JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_enco
  * Signature: (Ljava/lang/String;Ljava/lang/String;)I
  */
 JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_decode
-  (JNIEnv *, jobject, jstring, jstring);
+  (JNIEnv *, jclass, jstring, jstring);
 
 #ifdef __cplusplus
 }

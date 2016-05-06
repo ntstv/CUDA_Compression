@@ -3,7 +3,7 @@
 #include "libculzss.h"
 
 JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_encode
-  (JNIEnv * env, jobject obj, jstring inputFilename, jstring outputFilename) {
+  (JNIEnv * env, jclass class, jstring inputFilename, jstring outputFilename) {
 	const char *nativeInputFilename = (*env)->GetStringUTFChars(env, inputFilename, 0);
 	const char *nativeOutputFilename = (*env)->GetStringUTFChars(env, outputFilename, 0);
 
@@ -16,7 +16,7 @@ JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_enco
 }
 
 JNIEXPORT jint JNICALL Java_ru_mephi_dozen_rshamyan_adaliquid_gpgpu_JCulzss_decode
-  (JNIEnv * env, jobject obj, jstring inputFilename, jstring outputFilename) {
+  (JNIEnv * env, jclass class, jstring inputFilename, jstring outputFilename) {
 
 	const char *nativeInputFilename = (*env)->GetStringUTFChars(env, inputFilename, 0);
 	const char *nativeOutputFilename = (*env)->GetStringUTFChars(env, outputFilename, 0);
